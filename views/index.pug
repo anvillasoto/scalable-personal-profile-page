@@ -1,0 +1,639 @@
+extends layout
+
+block content
+  // ====== PRELOADER PART START ======
+  .preloader
+    .loader_34
+      .ytp-spinner
+        .ytp-spinner-container
+          .ytp-spinner-rotator
+            .ytp-spinner-left
+              .ytp-spinner-circle
+            .ytp-spinner-right
+              .ytp-spinner-circle
+  // ====== PRELOADER ENDS START ======
+  // ====== HEADER PART START ======
+  header#home.header-area
+    .navigation.fixed-top
+      .container
+        .row
+          .col-lg-12
+            nav.navbar.navbar-expand-lg
+              a.navbar-brand(href='/')
+                img(src='/images/logo-3.png' alt='Logo')
+              // Logo
+              button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.toggler-icon
+                span.toggler-icon
+                span.toggler-icon
+              #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.ml-auto
+                  li.nav-item.active
+                    a.page-scroll(href='#home') Home
+                  li.nav-item
+                    a.page-scroll(href='#about') About
+                  li.nav-item
+                    a.page-scroll(href='#service') Services
+                  li.nav-item
+                    a.page-scroll(href='#work') Portfolio
+                  li.nav-item
+                    a.page-scroll(href='#blog') Blog
+                  li.nav-item
+                    a.page-scroll(href='#contact') Contact
+              // navbar collapse
+            // navbar
+        // row
+      // container
+    // navigation
+    #parallax.header-content.d-flex.align-items-center
+      .header-shape.shape-one.layer(data-depth='0.10')
+        img(src='/images/banner/shape/shape-1.png' alt='Shape')
+      // header shape
+      .header-shape.shape-tow.layer(data-depth='0.30')
+        img(src='/images/banner/shape/shape-2.png' alt='Shape')
+      // header shape
+      .header-shape.shape-three.layer(data-depth='0.40')
+        img(src='/images/banner/shape/shape-3.png' alt='Shape')
+      // header shape
+      .header-shape.shape-fore.layer(data-depth='0.60')
+        img(src='/images/banner/shape/shape-2.png' alt='Shape')
+      // header shape
+      .header-shape.shape-five.layer(data-depth='0.20')
+        img(src='/images/banner/shape/shape-1.png' alt='Shape')
+      // header shape
+      .header-shape.shape-six.layer(data-depth='0.15')
+        img(src='/images/banner/shape/shape-4.png' alt='Shape')
+      // header shape
+      .header-shape.shape-seven.layer(data-depth='0.50')
+        img(src='/images/banner/shape/shape-5.png' alt='Shape')
+      // header shape
+      .header-shape.shape-eight.layer(data-depth='0.40')
+        img(src='/images/banner/shape/shape-3.png' alt='Shape')
+      // header shape
+      .header-shape.shape-nine.layer(data-depth='0.20')
+        img(src='/images/banner/shape/shape-6.png' alt='Shape')
+      // header shape
+      .header-shape.shape-ten.layer(data-depth='0.30')
+        img(src='/images/banner/shape/shape-3.png' alt='Shape')
+      // header shape
+      .container
+        .row.align-items-center
+          .col-xl-5.col-lg-6
+            .header-content-right
+              h4.sub-title Hello, I&rsquo;m
+              h1.title Alexander Villasoto
+              p Web Developer &amp; Data Science Enthusiast
+              a.main-btn(href='#work') View my Work
+            // header content right
+          .col-lg-6.offset-xl-1
+            .header-image.d-none.d-lg-block
+              img(src='/images/banner/hero.png' alt='hero')
+            // header image
+        // row
+      // container
+      .header-social
+        .container
+          .row
+            .col-lg-12
+              .header-social-icon
+                ul
+                  li
+                    a(href='https://facebook.com/anvillasoto' target='_blank')
+                      i.lni-facebook-filled
+                  li
+                    a(href='https://twitter.com/anvillasoto' target='_blank')
+                      i.lni-twitter-original
+                  li
+                    a(href='https://github.com/anvillasoto' target='_blank')
+                      i.lni-github-original
+                  li
+                    a(href='https://linkedin.com/in/anvillasoto' target='_blank')
+                      i.lni-linkedin-original
+              // header social
+          // row
+        // container
+      // header social
+    // header content
+  // ====== HEADER PART ENDS ======
+  // ====== ABOUT PART START ======
+  section#about.about-area.pt-125.pb-130
+    .container
+      .row.justify-content-center
+        .col-lg-8
+          .section-title.text-center
+            h2.title About Me
+            p
+              | Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.
+          // section title
+      // row
+      .row
+        .col-lg-6
+          .about-content.mt-50
+            h5.about-title Hi There! I&apos;m Alexander Villasoto
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            ul.clearfix
+              li
+                .single-info.d-flex.align-items-center
+                  .info-icon
+                    i.lni-envelope
+                  .info-text
+                    p
+                      span Email:
+                      |  anvillasoto@gmail.com
+                // single info
+              li
+                .single-info.d-flex.align-items-center
+                  .info-icon
+                    i.lni-map-marker
+                  .info-text
+                    p
+                      span Location:
+                      |  Manila, Philippines
+                // single info
+          // about content
+        .col-xl-5.offset-xl-1.col-lg-6
+          .about-skills.pt-25
+            .skill-item.mt-25
+              .skill-header
+                h6.skill-title HTML
+                .skill-percentage
+                  .count-box.counted
+                    span.counter 80
+                  |                                     %
+              .skill-bar
+                .bar-inner
+                  .bar.progress-line(data-width='80')
+            // skill item
+            .skill-item.mt-25
+              .skill-header
+                h6.skill-title CSS
+                .skill-percentage
+                  .count-box.counted
+                    span.counter 60
+                  |                                     %
+              .skill-bar
+                .bar-inner
+                  .bar.progress-line(data-width='60')
+            // skill item
+            .skill-item.mt-25
+              .skill-header
+                h6.skill-title Photoshop
+                .skill-percentage
+                  .count-box.counted
+                    span.counter 50
+                  |                                     %
+              .skill-bar
+                .bar-inner
+                  .bar.progress-line(data-width='50')
+            // skill item
+            .skill-item.mt-25
+              .skill-header
+                h6.skill-title Sketch
+                .skill-percentage
+                  .count-box.counted
+                    span.counter 90
+                  |                                     %
+              .skill-bar
+                .bar-inner
+                  .bar.progress-line(data-width='90')
+            // skill item
+          // about skills
+      // row
+    // container
+  // ====== ABOUT PART ENDS ======
+  // ====== SERVICES PART START ======
+  section#service.services-area.gray-bg.pt-125.pb-130
+    .container
+      .row.justify-content-center
+        .col-lg-8
+          .section-title.text-center.pb-30
+            h2.title My Services
+            p
+              | Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.
+          // section title
+      // row
+      .row.justify-content-center
+        .col-lg-4.col-md-6.col-sm-8
+          .single-service.text-center.mt-30
+            .service-icon
+              i.lni-code-alt
+            .service-content
+              h4.service-title
+                a(href='#') Web Design
+              p
+                | Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.
+          // single service
+        .col-lg-4.col-md-6.col-sm-8
+          .single-service.text-center.mt-30
+            .service-icon
+              i.lni-color-pallet
+            .service-content
+              h4.service-title
+                a(href='#contact') Graphic Design
+              p
+                | Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.
+          // single service
+        .col-lg-4.col-md-6.col-sm-8
+          .single-service.text-center.mt-30
+            .service-icon
+              i.lni-mobile
+            .service-content
+              h4.service-title
+                a(href='#') App Design
+              p
+                | Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.
+          // single service
+        .col-lg-4.col-md-6.col-sm-8
+          .single-service.text-center.mt-30
+            .service-icon
+              i.lni-vector
+            .service-content
+              h4.service-title
+                a(href='#') Illustration Design
+              p
+                | Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.
+          // single service
+        .col-lg-4.col-md-6.col-sm-8
+          .single-service.text-center.mt-30
+            .service-icon
+              i.lni-website
+            .service-content
+              h4.service-title
+                a(href='#') Web Development
+              p
+                | Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.
+          // single service
+        .col-lg-4.col-md-6.col-sm-8
+          .single-service.text-center.mt-30
+            .service-icon
+              i.lni-support
+            .service-content
+              h4.service-title
+                a(href='#') Consultancy and Support
+              p
+                | Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.
+          // single service
+      // row
+    // container
+  // ====== SERVICES PART ENDS ======
+  // ====== CALL TO ACTION PART START ======
+  section#call-to-action.call-to-action.pt-125.pb-130.bg_cover(style='background-image: url(/images/call-to-action.jpg)')
+    .container
+      .row.justify-content-center
+        .col-xl-8.col-lg-9
+          .call-action-content.text-center
+            h2.action-title Have any project on mind?
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostrud.
+            ul
+              li
+                a.main-btn.custom(href='#') download cv
+              li
+                a.main-btn.custom-2(href='#') hire me
+          // call action content
+      // row
+    // container
+  // ====== CALL TO ACTION PART ENDS ======
+  // ====== WORK PART START ======
+  section#work.work-area.pt-125.pb-130
+    .container
+      .row
+        .col-lg-8
+          .section-title.pb-25
+            h2.title My Recent Works
+            p
+              | Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.
+          // section title
+      // row
+      .row
+        .col-lg-4.col-md-6.col-sm-6
+          .single-work.text-center.mt-30
+            .work-image
+              img(src='/images/work/w-1.jpg' alt='work')
+            .work-overlay
+              .work-content
+                h3.work-title Product Design
+                ul
+                  li
+                    a.image-popup(href='/images/work/w-1.jpg')
+                      i.lni-plus
+                  li
+                    a(href='#')
+                      i.lni-link
+          // single work
+        .col-lg-4.col-md-6.col-sm-6
+          .single-work.text-center.mt-30
+            .work-image
+              img(src='/images/work/w-2.jpg' alt='work')
+            .work-overlay
+              .work-content
+                h3.work-title Product Design
+                ul
+                  li
+                    a.image-popup(href='/images/work/w-2.jpg')
+                      i.lni-plus
+                  li
+                    a(href='#')
+                      i.lni-link
+          // single work
+        .col-lg-4.col-md-6.col-sm-6
+          .single-work.text-center.mt-30
+            .work-image
+              img(src='/images/work/w-3.jpg' alt='work')
+            .work-overlay
+              .work-content
+                h3.work-title Product Design
+                ul
+                  li
+                    a.image-popup(href='/images/work/w-3.jpg')
+                      i.lni-plus
+                  li
+                    a(href='#')
+                      i.lni-link
+          // single work
+        .col-lg-4.col-md-6.col-sm-6
+          .single-work.text-center.mt-30
+            .work-image
+              img(src='/images/work/w-4.jpg' alt='work')
+            .work-overlay
+              .work-content
+                h3.work-title Product Design
+                ul
+                  li
+                    a.image-popup(href='/images/work/w-4.jpg')
+                      i.lni-plus
+                  li
+                    a(href='#')
+                      i.lni-link
+          // single work
+        .col-lg-4.col-md-6.col-sm-6
+          .single-work.text-center.mt-30
+            .work-image
+              img(src='/images/work/w-5.jpg' alt='work')
+            .work-overlay
+              .work-content
+                h3.work-title Product Design
+                ul
+                  li
+                    a.image-popup(href='/images/work/w-5.jpg')
+                      i.lni-plus
+                  li
+                    a(href='#')
+                      i.lni-link
+          // single work
+        .col-lg-4.col-md-6.col-sm-6
+          .single-work.text-center.mt-30
+            .work-image
+              img(src='/images/work/w-6.jpg' alt='work')
+            .work-overlay
+              .work-content
+                h3.work-title Product Design
+                ul
+                  li
+                    a.image-popup(href='/images/work/w-6.jpg')
+                      i.lni-plus
+                  li
+                    a(href='#')
+                      i.lni-link
+          // single work
+      // row
+      .row
+        .col-lg-12
+          .work-more.text-center.mt-50
+            a.main-btn(href='#') more works
+          // work more
+      // row
+    // container
+  // ====== WORK PART ENDS ======
+  // ====== PRICING PART START ======
+  section#pricing.pricing-area.gray-bg.pt-125.pb-130
+    .container
+      .row.justify-content-center
+        .col-lg-8
+          .section-title.text-center.pb-25
+            h2.title My Pricing Plans
+            p
+              | Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.
+          // section title
+      // row
+      .row.justify-content-center
+        .col-lg-4.col-md-8.col-sm-9
+          .single-pricing.text-center.mt-30
+            .pricing-package
+              h4.package-title Basic
+            .pricing-body
+              .pricing-text
+                p Simple project management for teams and small businesses.
+                span.price $19.00
+              .pricing-list
+                ul
+                  li Unlimited Tasks
+                  li Unlimited Public
+                  li Private Projects
+                  li Unlimited Teams
+                  li All Integrations
+                  li Public API
+              .pricing-btn
+                a.main-btn(href='#contact') get quote
+          // single pricing
+        .col-lg-4.col-md-8.col-sm-9
+          .single-pricing.active.text-center.mt-30
+            .pricing-package
+              h4.package-title Standard
+            .pricing-body
+              .pricing-text
+                p Simple project management for teams and small businesses.
+                span.price $39.00
+              .pricing-list
+                ul
+                  li Unlimited Tasks
+                  li Unlimited Public
+                  li Private Projects
+                  li Unlimited Teams
+                  li All Integrations
+                  li Public API
+              .pricing-btn
+                a.main-btn(href='#contact') get quote
+          // single pricing
+        .col-lg-4.col-md-8.col-sm-9
+          .single-pricing.text-center.mt-30
+            .pricing-package
+              h4.package-title Premium
+            .pricing-body
+              .pricing-text
+                p Simple project management for teams and small businesses.
+                span.price $29.00
+              .pricing-list
+                ul
+                  li Unlimited Tasks
+                  li Unlimited Public
+                  li Private Projects
+                  li Unlimited Teams
+                  li All Integrations
+                  li Public API
+              .pricing-btn
+                a.main-btn(href='#contact') get quote
+          // single pricing
+      // row
+    // container
+  // ====== PRICING PART ENDS ======
+  // ====== BLOG PART START ======
+  section#blog.blog-area.pt-125.pb-130
+    .container
+      .row.justify-content-center
+        .col-lg-8
+          .section-title.text-center.pb-25
+            h2.title From The Blog
+            p
+              | Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.
+          // section title
+      // row
+      .row.justify-content-center
+        .col-lg-4.col-md-8.col-sm-9
+          .single-blog.mt-30
+            .blog-image
+              img(src='/images/blog/b-1.jpg' alt='Blog')
+            .blog-content
+              h4.blog-title
+                a(href='#') Hired Releases 2023 Brand Health.
+              span July 26, 2022
+          // single blog
+        .col-lg-4.col-md-8.col-sm-9
+          .single-blog.mt-30
+            .blog-image
+              img(src='/images/blog/b-2.jpg' alt='Blog')
+            .blog-content
+              h4.blog-title
+                a(href='#') Hired Releases 2023 Brand Health.
+              span July 26, 2022
+          // single blog
+        .col-lg-4.col-md-8.col-sm-9
+          .single-blog.mt-30
+            .blog-image
+              img(src='/images/blog/b-3.jpg' alt='Blog')
+            .blog-content
+              h4.blog-title
+                a(href='#') Hired Releases 2023 Brand Health.
+              span July 26, 2022
+          // single blog
+      // row
+      .row
+        .col-lg-12
+          .blog-more.text-center.mt-50
+            a.main-btn(href='#') More posts
+          // blog more
+      // row
+    // container
+  // ====== BLOG PART ENDS ======
+  // ====== CONTACT PART START ======
+  section#contact.contact-area.pt-125.pb-130.gray-bg
+    .container
+      .row.justify-content-center
+        .col-lg-8
+          .section-title.text-center.pb-25
+            h2.title Get In Touch
+            p
+              | Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.
+          // section title
+      // row
+      .row.justify-content-center
+        .col-lg-4.col-md-6.col-sm-7
+          .contact-box.text-center.mt-30
+            .contact-icon
+              i.lni-map-marker
+            .contact-content
+              h6.contact-title Address
+              p 123 Stree New York City , United States Of America 750
+          // contact box
+        .col-lg-4.col-md-6.col-sm-7
+          .contact-box.text-center.mt-30
+            .contact-icon
+              i.lni-phone
+            .contact-content
+              h6.contact-title Phone
+              p +931 2222 5555
+              p +547 5554 6663
+          // contact box
+        .col-lg-4.col-md-6.col-sm-7
+          .contact-box.text-center.mt-30
+            .contact-icon
+              i.lni-envelope
+            .contact-content
+              h6.contact-title Email
+              p support@yourmail.com
+              p info@helpline.com
+          // contact box
+      // row
+      .row
+        .col-lg-6
+          .contact-form.pt-30
+            form#contact-form(action='assets/contact.php')
+              .single-form
+                input(type='text' name='name' placeholder='Name')
+              // single form
+              .single-form
+                input(type='email' name='email' placeholder='Email')
+              // single form
+              .single-form
+                textarea(name='message' placeholder='Message')
+              // single form
+              p.form-message
+              .single-form
+                button.main-btn(type='submit') Send Message
+              // single form
+          // contact form
+        .col-lg-6
+          .contact-map.mt-60
+            .gmap_canvas
+              iframe#gmap_canvas(src='https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
+          // contact map
+      // row
+    // container
+  // ====== CONTACT PART ENDS ======
+  // ====== FOOTER PART START ======
+  footer#footer.footer-area
+    .footer-widget.pt-130.pb-130
+      .container
+        .row.justify-content-center
+          .col-lg-8
+            .footer-content.text-center
+              a(href='index.html')
+                img(src='/images/logo-2.png' alt='Logo')
+              p.mt-
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo
+                | consequat.
+              ul
+                li
+                  a(href='#')
+                    i.lni-facebook-filled
+                li
+                  a(href='#')
+                    i.lni-twitter-original
+                li
+                  a(href='#')
+                    i.lni-pinterest
+                li
+                  a(href='#')
+                    i.lni-linkedin-original
+            // footer content
+        // row
+      // container
+    // footer widget
+    .footer-copyright.pb-20
+      .container
+        .row
+          .col-lg-12
+            .copyright-text.text-center.pt-20
+              p
+                | Copyright &copy; 2022. Template Crafted by
+                a(href='https://uideck.com' rel='nofollow') UIdeck
+            // copyright text
+        // row
+      // container
+    // footer widget
+  // ====== FOOTER PART ENDS ======
+  // ====== BACK TOP TOP PART START ======
+  a.back-to-top(href='#')
+    i.lni-chevron-up
+  // ====== BACK TOP TOP PART ENDS ======
