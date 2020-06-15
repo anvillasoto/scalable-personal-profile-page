@@ -5,4 +5,4 @@ install:
 lint:
 	pug-lint ./*.pug
 
-all: install lint test
+all: install lint
