@@ -3,6 +3,7 @@ install:
 		pip install -r requirements.txt
 
 lint:
-	pug-lint ./*.pug
+	tidy -q -e --drop-empty-elements no views/*.html
+	pug-lint views/*.pug
 
 all: install lint
