@@ -1,4 +1,5 @@
 pipeline {
+<<<<<<< HEAD
      agent any
      stages {
          stage('Build') {
@@ -12,6 +13,7 @@ pipeline {
          }
          stage('Lint') {
               steps {
+                  sh 'ls -l'
                   sh 'make lint'
               }
          }
