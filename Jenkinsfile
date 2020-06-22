@@ -28,10 +28,22 @@ pipeline {
       }
     }
     
+    stage('Deploy Docker Image') {
+      steps{
+        script {
+            docker.withRegistry( '', registryCredential ) {
+            dockerImage.push()
+          }
+        }
+      }
+    }
+    
     stage('Push docker image to ECR') {
       steps {
         script {
-          docker.withRegistry("212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page", "aws-credential") { dockerImage.push() }
+          docker.withRegistry("https://212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page", "ecr:us-west-2:aws-credential") { 
+            dockerImage.push()
+          }
         }
       }
     }
