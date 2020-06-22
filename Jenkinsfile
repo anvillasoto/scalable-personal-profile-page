@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    ecrRegistry = scalable-personal-profile-page
+    ecrRegistry = "scalable-personal-profile-page"
     registry = "anvillasoto/scalable-personal-profile-page"
     registryCredential = 'dockerhub'
   }
