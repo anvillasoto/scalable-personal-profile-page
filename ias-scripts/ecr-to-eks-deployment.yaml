@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: ecr-to-eks-deployment
-        image: 212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page:26
+        image: 212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page:latest
         ports:
         - containerPort: 80
