@@ -1,0 +1,26 @@
+[
+    {
+    "ParameterKey": "ClusterControlPlaneSecurityGroup",
+    "ParameterValue": "sg-0f9c726cfaee9c945"
+    },
+    {
+    "ParameterKey": "NodeGroupName",
+    "ParameterValue": "scalable-personal-profile-page-nodegroup"
+    },
+    {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "alexagram-key"
+    },
+    {
+    "ParameterKey": "Subnets",
+    "ParameterValue": "subnet-03e49d23c4c37ad18,subnet-051fd25703748ed32,subnet-0c188e6febe971a92,subnet-036e7a60b4b91b6f6"
+    },
+    {
+    "ParameterKey": "VpcId",
+    "ParameterValue": "vpc-04da266fe067a023a"
+    },
+    {
+    "ParameterKey": "ClusterName",
+    "ParameterValue": "scalable-personal-profile-page-cluster"
+    }
+]

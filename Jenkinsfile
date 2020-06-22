@@ -37,6 +37,13 @@ pipeline {
         }
       }
     }
+    stage('Push docker image to ECR') {
+      steps {
+        script {
+          docker.withRegistry("212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page", "ecr:us-west-2:deploy") { dockerImage.push() }
+        }
+      }
+    }
     stage('Remove Unused Docker Image') {
       steps{
         sh "docker rmi $registry:$BUILD_NUMBER"
