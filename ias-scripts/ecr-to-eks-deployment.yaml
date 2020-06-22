@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecr-to-eks-deployment
+spec:
+  selector:
+    matchLabels:
+      run: ecr-to-eks-deployment
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: ecr-to-eks-deployment
+    spec:
+      containers:
+      - name: ecr-to-eks-deployment
+        image: 212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page:26
+        ports:
+        - containerPort: 80

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecr-to-eks-deployment
+  labels:
+    run: ecr-to-eks-deployment
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: ecr-to-eks-deployment
+  type: LoadBalancer
