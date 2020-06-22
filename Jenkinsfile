@@ -40,7 +40,7 @@ pipeline {
     stage('Push docker image to ECR') {
       steps {
         script {
-          docker.withRegistry("212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page", "aws-static") { dockerImage.push() }
+          docker.withRegistry("212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page", "aws-credential") { dockerImage.push() }
         }
       }
     }
