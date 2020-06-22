@@ -167,10 +167,10 @@ __modify Jenkinsfile Push docker imag...__ and __change port 3005 to port 80__
 both pushed to the master branch are detected by Jenkins. The result of the builds are shown below:
 
 1. For former commit:
-![rolling-2](rolling-2.PNG)
+![rolling-2](./images/rolling-2.PNG)
 
 2. For latter commit:
-![rolling-3](rolling-3.PNG)
+![rolling-3](./images/rolling-3.PNG)
 
 
 ## Credits
