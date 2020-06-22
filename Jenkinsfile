@@ -1,6 +1,7 @@
 pipeline {
 
   environment {
+    ecrRegistry = scalable-personal-profile-page
     registry = "anvillasoto/scalable-personal-profile-page"
     registryCredential = 'dockerhub'
   }
@@ -24,6 +25,17 @@ pipeline {
       steps {
         script {
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
+          dockerImageForECR = docker.build ecrRegistry + ":$BUILD_NUMBER"
+        }
+      }
+    }
+    
+    stage('Deploy Docker Image') {
+      steps{
+        script {
+            docker.withRegistry( '', registryCredential ) {
+            dockerImage.push()
+          }
         }
       }
     }
@@ -31,13 +43,14 @@ pipeline {
     stage('Push docker image to ECR') {
       steps {
         script {
-          docker.withRegistry("https://212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page", "ecr:us-west-2:aws-credential") { dockerImage.push() }
+          docker.withRegistry("https://212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page", "ecr:us-west-2:aws-credential") { dockerImageForECR.push() }
         }
       }
     }
     stage('Remove Unused Docker Image') {
       steps{
         sh "docker rmi $registry:$BUILD_NUMBER"
+        sh "docker rmi $ecrRegistry:$BUILD_NUMBER"
       }
     }
     
