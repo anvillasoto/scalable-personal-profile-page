@@ -28,15 +28,6 @@ pipeline {
       }
     }
     
-    stage('Deploy Docker Image') {
-      steps{
-         script {
-            docker.withRegistry( '', registryCredential ) {
-            dockerImage.push()
-          }
-        }
-      }
-    }
     stage('Push docker image to ECR') {
       steps {
         script {
