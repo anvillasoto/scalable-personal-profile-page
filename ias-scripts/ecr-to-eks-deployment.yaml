@@ -7,7 +7,12 @@ spec:
   selector:
     matchLabels:
       run: ecr-to-eks-deployment
-  replicas: 2
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 50%
+      maxSurge: 1
   template:
     metadata:
       labels:
@@ -16,5 +21,6 @@ spec:
       containers:
       - name: ecr-to-eks-deployment
         image: 212294556799.dkr.ecr.us-west-2.amazonaws.com/scalable-personal-profile-page:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
