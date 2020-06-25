@@ -50,8 +50,8 @@ pipeline {
     
     stage('ECR to EKS Deployment') {
       steps {
-        kubectl apply -f ias-scripts/ecr-to-eks-deployment.yaml
-        kubectl apply -f ias-scripts/ecr-to-eks-deployment-service.yaml
+        sh "kubectl apply -f ias-scripts/ecr-to-eks-deployment.yaml"
+        sh "kubectl apply -f ias-scripts/ecr-to-eks-deployment-service.yaml"
       }
     }
     
