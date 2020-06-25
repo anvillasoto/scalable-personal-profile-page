@@ -154,6 +154,8 @@ Take note of the URI from below. This will be the URL to access the application.
 
 ## Rolling Deployment
 
+### On the Jenkins side
+
 The author used rolling deployment for this app due to its simplicity and small 
 infrequent push-to-deploy strategy. Backed with Jenkins, the author made sure 
 that changes, however infrquent are gradually reflected to the docker images 
@@ -171,6 +173,23 @@ both pushed to the master branch are detected by Jenkins. The result of the buil
 
 2. For latter commit:
 ![rolling-3](./images/rolling-3.PNG)
+
+
+### For Kubernetes 
+
+Executing the following scripts:
+
+```
+kubectl rollout status deployment ecr-to-eks-deployment
+kubectl get deployment ecr-to-eks-deployment
+```
+
+The output successfully tell successful rolling deployment:
+
+![rollout-3](./images/rolling-4.PNG)
+
+![rollout-4](./images/rolling-5.PNG)
+
 
 
 ## Credits
