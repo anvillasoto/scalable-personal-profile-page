@@ -48,6 +48,13 @@ pipeline {
       }
     }
     
+    stage('Push docker image to ECR') {
+      steps {
+        kubectl apply -f ias-scripts/ecr-to-eks-deployment.yaml
+        kubectl apply -f ias-scripts/ecr-to-eks-deployment-service.yaml
+      }
+    }
+    
     stage('Remove Unused Docker Image') {
       steps{
         sh "docker rmi $registry:$BUILD_NUMBER"
